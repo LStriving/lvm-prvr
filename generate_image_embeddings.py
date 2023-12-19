@@ -112,7 +112,7 @@ if __name__ == "__main__":
     parser.add_argument("--image_path", type=str, default="./extracted336_grid2")
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--num_gpus", type=int, default=8)
-    parser.add_argument("--num_workers", type=int, default=4)
+    parser.add_argument("--num_workers", type=int, default=8)
     parser.add_argument("--output", type=str, default="./features/image_features")
     parser.add_argument("--resume",action="store_true")
 
