@@ -1,0 +1,22 @@
+# dataset
+anet_videos/
+
+# pretrained model
+ckpt/
+pretrained_ckpt/
+
+# features
+features/
+
+# images
+*.jpg
+
+# log
+*log*
+
+# cache
+__pycache__/
+
+# zip
+*.zip
+*.tar.gz
