@@ -73,13 +73,13 @@ def calc_similarity_all_text(text_pkl_root:str, vis_features):
     return sim, vid_id
 
 
-def calc_sim_all_videos(text_pkl_root:str, visual_root:str):
+def calc_sim_all_videos(text_pkl_root:str, visual_root:str, save_dir:str='./tmp_result(video2text)'):
     # load visual features
     assert os.path.exists(visual_root), f'{visual_root} not exists!'
     assert os.path.exists(text_pkl_root), f'{text_pkl_root} not exists!'
     visual_feat_list = os.listdir(visual_root)
     
-    tmp_result_path = './tmp_result(video2text)'
+    tmp_result_path = save_dir
     if not os.path.exists(tmp_result_path):
         os.makedirs(tmp_result_path)
 
@@ -98,6 +98,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--text_pkl_root', type=str, default='./features/text_features@224px')
     parser.add_argument('--visual_root', type=str, default='./features/image_features@224px')
+    parser.add_argument('--save_dir', type=str, default='./tmp_result(video2text)')
     args = parser.parse_args()
     
-    calc_sim_all_videos(args.text_pkl_root, args.visual_root)
+    calc_sim_all_videos(args.text_pkl_root, args.visual_root, args.save_dir)

@@ -86,5 +86,10 @@ python generate_imaga_embeddings.py --batch_size 20
 
 ### 4. Calculate similarity
 ```bash
+python cal_cosine_similarity.py --text_pkl_root ./features/text_features@224px --visual_root ./features/image_features@224px --save_dir .'/tmp_result(video2text)'
+```
 
+### 5. Calculate recall@K
+```bash
+python text2video_sim.py --pickle_root './tmp_result(video2text)' --save_dir ./retrival_result/clip_224
 ```
