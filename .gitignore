@@ -1,5 +1,8 @@
 # dataset
-anet_videos/
+anet_videos
+
+# extracted frames
+extracted336_grid2
 
 # pretrained model
 ckpt/
@@ -20,3 +23,5 @@ __pycache__/
 # zip
 *.zip
 *.tar.gz
+
+result.json
