@@ -10,7 +10,6 @@
 - saveing format: jpg
 - decode: jpeg4py
 
-
 ### video:
 - all videos in val_1 are extracted except 16 videos: (smil gpu)
     ```
@@ -31,6 +30,7 @@
     v_RTwa2d6Oqvo
     v_VhzPqd0Su5I
     ```
+- average frame num: 15.054
 
 ### checkpoints:
 _VITL14 = "https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt"
